@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="assets/logo.jpeg" />
+    <title>NASA - APOD</title>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <!-- Current Img Container -->
+      <div id="current-image-container">
+        <h1 class="pic-heading">Picture On ...</h1>
+        <div class="pic-of-the-day-container">
+          <img src="#" alt="Nasas pic of the day" id="pic" />
+        </div>
+        <!-- Desciption of the pic of the day -->
+        <div class="description"></div>
+      </div>
+      <!-- Input form -->
+      <form action="post" id="search-form">
+        <label for="search-input">Search Picture of the day</label><br />
+        <input type="date" id="search-input" /><br />
+        <button type="submit" id="form-submit-btn">Search</button>
+      </form>
+      <!-- Recent Serch history -->
+      <h2 class="search-history-heading">Previous Searches</h2>
+      <ul id="search-history"></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

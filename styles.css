@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.container {
+  padding: 5vh;
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  background-color: white;
+}
+
+.pic-heading {
+  margin-bottom: 2vh;
+  font-size: 34px;
+  color: white;
+}
+
+#current-image-container {
+  padding: 10vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  gap: 5vh;
+  color: white;
+}
+
+.pic-of-the-day-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  object-fit: contain;
+}
+
+.pic-of-the-day-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.description {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+#search-form {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: black;
+}
+
+#search-form label {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#search-form input {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-history-heading {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#search-form button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+#search-form button:hover {
+  background-color: rgb(5, 16, 0);
+  scale: 1.03;
+}
+
+#search-form button:active {
+  transform: translateY(3px);
+}
+
+#search-history {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  height: 20vh;
+}
+
+.history-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid rgb(208, 208, 208);
+  font-size: 16px;
+  white-space: nowrap;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.history-btn:hover {
+  background-color: beige;
+  scale: 1.03;
+}
+
+.history-btn:active {
+  transform: translateY(3px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1vh;
+    width: 100%;
+  }
+  #current-image-container {
+    padding: 2vh;
+  }
+  .pic-heading {
+    font-size: 24px;
+  }
+  #search-form label {
+    font-size: 22px;
+  }
+  .search-history-heading {
+    font-size: 22px;
+  }
+}
